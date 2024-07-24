@@ -42,6 +42,16 @@ public class Vehicule {
     };
 
 
+    public void setConductor(Conducteur conductor) {
+        if(conductor.getBirhtDate().getYear() < 18){
+            this.conductor = conductor;
+        }
+        else{
+            System.out.println("ce conducteur n'est pas valide");
+        }
+
+    }
+
     public String getModel() {
         return model;
     }
@@ -86,9 +96,6 @@ public class Vehicule {
         this.fuelReservation = fuelReservation;
     }
 
-    public void setConductor(Conducteur conductor) {
-        this.conductor = conductor;
-    }
 
     @Override
     public String toString() {

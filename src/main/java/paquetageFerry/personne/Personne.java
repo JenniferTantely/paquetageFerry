@@ -1,16 +1,16 @@
 package paquetageFerry.personne;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Personne {
     private String lastName;
     private String firstName;
-    private Date birhtDate;
+    private LocalDate birhtDate;
     private String adress;
     private double weigh;
 
-    public Personne(String lastName, String firstName, Date birhtDate, String adress, double weigh) {
+    public Personne(String lastName, String firstName, LocalDate birhtDate, String adress, double weigh) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.birhtDate = birhtDate;
@@ -30,7 +30,7 @@ public class Personne {
         return firstName;
     }
 
-    public Date getBirhtDate() {
+    public LocalDate getBirhtDate() {
         return birhtDate;
     }
 
@@ -50,7 +50,7 @@ public class Personne {
         this.firstName = firstName;
     }
 
-    public void setBirhtDate(Date birhtDate) {
+    public void setBirhtDate(LocalDate birhtDate) {
         this.birhtDate = birhtDate;
     }
 
